@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="root"></div>
+    <div class="msg"></div>
+
+
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+
+
+    <script>
+        // Ex1
+        const heading = React.createElement('h1',{},"Hello namste react");
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        root.render(heading)
+
+
+        // Ex20
+        const msg = React.createElement('h3',{},"Message is printed");
+
+        const msgroot = ReactDOM.createRoot(document.querySelector(".msg"))
+
+        msgroot.render(msg);
+    </script>
+</body>
+</html>
